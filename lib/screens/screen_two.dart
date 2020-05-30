@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:kevinmulengoflutterapp/screens/screen_one.dart';
 
 class SecondScreen extends StatefulWidget {
   @override
@@ -20,7 +21,7 @@ class _SecondScreenState extends State<SecondScreen> {
               IconButton(icon: Icon(Icons.chevron_left, size: 35, color: Colors.grey[800],),
               onPressed: ()
                 {
-
+                  Navigator.pop(context);
                 },
               ),
             ],
@@ -38,27 +39,87 @@ class _SecondScreenState extends State<SecondScreen> {
                     ),
                   ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(16.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: <Widget>[
-                    Card(
+              Column(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        Card(
+                          elevation: 2,
+                          color: Colors.blue,
+                          child: Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Center(
+                              child: Text('14m ago',
+                                style: TextStyle(
+                                  fontSize: 14.0, color: Colors.white, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat',
+                                ),),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  Center(
+                      child: Image(
+                        image: AssetImage('images/profileimage.png'),
+                        height: 120,
+                      ),
+                  ),
+                  SizedBox(height: 20,),
+                  Container(
+                    height: 50,
+                    width: 200,
+                    child: Card(
                       elevation: 2,
                       color: Colors.blue,
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Center(
-                          child: Text('14m ago',
-                          style: TextStyle(
-                            fontSize: 14.0, color: Colors.white, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat',
-                          ),),
+                          child: Text('@Nameofsource',
+                            style: TextStyle(
+                              fontSize: 16.0, color: Colors.white, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat',
+                            ),),
                         ),
                       ),
                     ),
-                  ],
-                ),
-              )
+                  ),
+                  SizedBox(height: 30,),
+                  Align(
+                    alignment: Alignment.center,
+                    child: Text('Trump tries to help the \nstock market in 2020  \nwhile people wait for\nan answer.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 18.0, color: Colors.white, fontWeight: FontWeight.normal, fontFamily: 'Monteserrat', height: 1.5,
+                      ),),
+                  ),
+                  SizedBox(height: 30,),
+                  Container(
+                    height: 50,
+                    width: 200,
+                    child: GestureDetector(
+                      onTap: ()
+                      {
+                        Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => FirstScreen()),);
+                      },
+                      child: Card(
+                        elevation: 2,
+                        color: Colors.blue,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Center(
+                            child: Image(image: AssetImage('images/link.png'),),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ],
