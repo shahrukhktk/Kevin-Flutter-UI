@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:kevinmulengoflutterapp/screens/screen_two.dart';
 
 class FirstScreen extends StatefulWidget {
   @override
@@ -13,18 +14,18 @@ class _FirstScreenState extends State<FirstScreen> {
     Widget Nytt(String listTitle, String subTitle)
     {
       return ListTile(
-//        onTap: ()
-//        {
-//          Navigator.push(context,
-//            MaterialPageRoute(builder: (context) => ProductDetailsScreen()),);
-//        },
+        onTap: ()
+        {
+          Navigator.push(context,
+            MaterialPageRoute(builder: (context) => SecondScreen()),);
+        },
         title: Text('$listTitle',
           style: TextStyle(
               fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Colors.blue, height: 1.5
           ),
         ),
         subtitle: Text('$subTitle', style: TextStyle(
-            fontFamily: 'Monteserrat' , color: Colors.white, fontSize: 15.0,
+            fontFamily: 'Monteserrat' , color: Colors.white, fontSize: 16.0,
         ),),
         trailing: Image(
           image: AssetImage('images/news.png'),
@@ -35,18 +36,18 @@ class _FirstScreenState extends State<FirstScreen> {
     Widget Sport(String listTitle, String subTitle)
     {
       return ListTile(
-//        onTap: ()
-//        {
-//          Navigator.push(context,
-//            MaterialPageRoute(builder: (context) => ProductDetailsScreen()),);
-//        },
+       onTap: ()
+        {
+          Navigator.push(context,
+            MaterialPageRoute(builder: (context) => SecondScreen()),);
+        },
           title: Text('$listTitle',
             style: TextStyle(
                 fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Colors.blue, height: 1.5
             ),
           ),
           subtitle: Text('$subTitle', style: TextStyle(
-            fontFamily: 'Monteserrat' , color: Colors.white, fontSize: 15.0,
+            fontFamily: 'Monteserrat' , color: Colors.white, fontSize: 16.0,
           ),),
           trailing: Image(
             image: AssetImage('images/soccerball.png'),
@@ -57,21 +58,21 @@ class _FirstScreenState extends State<FirstScreen> {
     Widget Halsa(String listTitle, String subTitle)
     {
       return ListTile(
-//        onTap: ()
-//        {
-//          Navigator.push(context,
-//            MaterialPageRoute(builder: (context) => ProductDetailsScreen()),);
-//        },
+          onTap: ()
+          {
+            Navigator.push(context,
+              MaterialPageRoute(builder: (context) => SecondScreen()),);
+          },
           title: Text('$listTitle',
             style: TextStyle(
                 fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Colors.blue, height: 1.5
             ),
           ),
           subtitle: Text('$subTitle', style: TextStyle(
-            fontFamily: 'Monteserrat' , color: Colors.white, fontSize: 15.0,
+            fontFamily: 'Monteserrat' , color: Colors.white, fontSize: 16.0,
           ),),
           trailing: Image(
-            image: AssetImage('images/brain.png'),
+            image: AssetImage('images/doctor.png'),
           )
       );
     }
@@ -79,18 +80,18 @@ class _FirstScreenState extends State<FirstScreen> {
     Widget Ekonomi(String listTitle, String subTitle)
     {
       return ListTile(
-//        onTap: ()
-//        {
-//          Navigator.push(context,
-//            MaterialPageRoute(builder: (context) => ProductDetailsScreen()),);
-//        },
+          onTap: ()
+          {
+            Navigator.push(context,
+              MaterialPageRoute(builder: (context) => SecondScreen()),);
+          },
           title: Text('$listTitle',
             style: TextStyle(
                 fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Colors.blue, height: 1.5
             ),
           ),
           subtitle: Text('$subTitle', style: TextStyle(
-            fontFamily: 'Monteserrat' , color: Colors.white, fontSize: 15.0,
+            fontFamily: 'Monteserrat' , color: Colors.white, fontSize: 16.0,
           ),),
           trailing: Image(
             image: AssetImage('images/money.png'),
@@ -101,21 +102,21 @@ class _FirstScreenState extends State<FirstScreen> {
     Widget Teknologi(String listTitle, String subTitle)
     {
       return ListTile(
-//        onTap: ()
-//        {
-//          Navigator.push(context,
-//            MaterialPageRoute(builder: (context) => ProductDetailsScreen()),);
-//        },
+          onTap: ()
+          {
+            Navigator.push(context,
+              MaterialPageRoute(builder: (context) => SecondScreen()),);
+          },
           title: Text('$listTitle',
             style: TextStyle(
                 fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Colors.blue, height: 1.5
             ),
           ),
           subtitle: Text('$subTitle', style: TextStyle(
-            fontFamily: 'Monteserrat' , color: Colors.white, fontSize: 15.0,
+            fontFamily: 'Monteserrat' , color: Colors.white, fontSize: 16.0,
           ),),
           trailing: Image(
-            image: AssetImage('images/doctor.png'),
+            image: AssetImage('images/brain.png'),
           )
       );
     }
@@ -129,12 +130,14 @@ class _FirstScreenState extends State<FirstScreen> {
             height: 100,
             padding: EdgeInsets.all(10),
             child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
                 Text('Alla\nSvenska nyheter',
                   style: TextStyle(
-                    fontSize: 20.0, color: Colors.black, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat',
+                    fontSize: 30.0, color: Colors.black, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat',
                   ),
                 ),
+                Image(image: AssetImage('images/flag.png',), height: 25,),
               ],
             ),
           ),
@@ -147,7 +150,7 @@ class _FirstScreenState extends State<FirstScreen> {
               child: Container(
                 padding: EdgeInsets.all(2),
                 height: 100,
-                child: Nytt('Nytt', 'Haar hittar du de senaste \nnyheterna i sverige'),
+                child: Nytt('Nytt', 'Har hittar du de senaste \nnyheterna i sverige'),
               ),
             ),
           ),
@@ -159,7 +162,7 @@ class _FirstScreenState extends State<FirstScreen> {
               child: Container(
                 padding: EdgeInsets.all(2),
                 height: 100,
-                child: Sport('Sport', 'Haar hittar du de senaste \nnyheterna inom sport'),
+                child: Sport('Sport', 'Har hittar du de senaste \nnyheterna inom sport'),
               ),
             ),
           ),
@@ -171,7 +174,7 @@ class _FirstScreenState extends State<FirstScreen> {
               child: Container(
                 padding: EdgeInsets.all(2),
                 height: 100,
-                child: Halsa('Halsa', 'Haar hittar du de senaste \nnyheterna inom halsa'),
+                child: Halsa('Halsa', 'Har hittar du de senaste \nnyheterna inom halsa'),
               ),
             ),
           ),
@@ -183,7 +186,7 @@ class _FirstScreenState extends State<FirstScreen> {
               child: Container(
                 padding: EdgeInsets.all(2),
                 height: 100,
-                child: Ekonomi('Ekonomi', 'Haar hittar du de senaste \nnyheterna inom ekonomi'),
+                child: Ekonomi('Ekonomi', 'Har hittar du de senaste \nnyheterna inom ekonomi'),
               ),
             ),
           ),
@@ -195,7 +198,7 @@ class _FirstScreenState extends State<FirstScreen> {
               child: Container(
                 padding: EdgeInsets.all(2),
                 height: 100,
-                child: Teknologi('Teknologi', 'Haar hittar du de senaste \nnyheterna inom teknologi'),
+                child: Teknologi('Teknologi', 'Har hittar du de senaste \nnyheterna inom teknologi'),
               ),
             ),
           ),
