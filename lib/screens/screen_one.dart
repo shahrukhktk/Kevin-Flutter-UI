@@ -21,7 +21,7 @@ class _FirstScreenState extends State<FirstScreen> {
         },
         title: Text('$listTitle',
           style: TextStyle(
-              fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Colors.blue, height: 1.5
+              fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Color.fromARGB(215, 114, 137, 218), height: 1.5
           ),
         ),
         subtitle: Text('$subTitle', style: TextStyle(
@@ -43,7 +43,7 @@ class _FirstScreenState extends State<FirstScreen> {
         },
           title: Text('$listTitle',
             style: TextStyle(
-                fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Colors.blue, height: 1.5
+                fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Color.fromARGB(215, 114, 137, 218), height: 1.5
             ),
           ),
           subtitle: Text('$subTitle', style: TextStyle(
@@ -65,7 +65,7 @@ class _FirstScreenState extends State<FirstScreen> {
           },
           title: Text('$listTitle',
             style: TextStyle(
-                fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Colors.blue, height: 1.5
+                fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Color.fromARGB(215, 114, 137, 218), height: 1.5
             ),
           ),
           subtitle: Text('$subTitle', style: TextStyle(
@@ -87,7 +87,7 @@ class _FirstScreenState extends State<FirstScreen> {
           },
           title: Text('$listTitle',
             style: TextStyle(
-                fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Colors.blue, height: 1.5
+                fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Color.fromARGB(215, 114, 137, 218), height: 1.5
             ),
           ),
           subtitle: Text('$subTitle', style: TextStyle(
@@ -109,7 +109,7 @@ class _FirstScreenState extends State<FirstScreen> {
           },
           title: Text('$listTitle',
             style: TextStyle(
-                fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Colors.blue, height: 1.5
+                fontSize: 25.0, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat', color: Color.fromARGB(215, 114, 137, 218), height: 1.5
             ),
           ),
           subtitle: Text('$subTitle', style: TextStyle(

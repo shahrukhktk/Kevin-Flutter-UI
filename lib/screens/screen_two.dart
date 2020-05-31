@@ -48,7 +48,7 @@ class _SecondScreenState extends State<SecondScreen> {
                       children: <Widget>[
                         Card(
                           elevation: 2,
-                          color: Colors.blue,
+                          color: Color.fromARGB(215, 114, 137, 218),
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Center(
@@ -62,7 +62,6 @@ class _SecondScreenState extends State<SecondScreen> {
                       ],
                     ),
                   ),
-
                   Center(
                       child: Image(
                         image: AssetImage('images/profileimage.png'),
@@ -71,23 +70,20 @@ class _SecondScreenState extends State<SecondScreen> {
                   ),
                   SizedBox(height: 20,),
                   Container(
-                    height: 50,
-                    width: 200,
+                    height: 40,
+                    width: 180,
                     child: Card(
                       elevation: 2,
-                      color: Colors.blue,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
+                      color: Color.fromARGB(215, 114, 137, 218),
                         child: Center(
                           child: Text('@Nameofsource',
                             style: TextStyle(
-                              fontSize: 16.0, color: Colors.white, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat',
+                              fontSize: 12.0, color: Colors.white, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat',
                             ),),
                         ),
-                      ),
                     ),
                   ),
-                  SizedBox(height: 30,),
+                  SizedBox(height: 50,),
                   Align(
                     alignment: Alignment.center,
                     child: Text('Trump tries to help the \nstock market in 2020  \nwhile people wait for\nan answer.',
@@ -96,10 +92,10 @@ class _SecondScreenState extends State<SecondScreen> {
                         fontSize: 18.0, color: Colors.white, fontWeight: FontWeight.normal, fontFamily: 'Monteserrat', height: 1.5,
                       ),),
                   ),
-                  SizedBox(height: 30,),
+                  SizedBox(height: 80,),
                   Container(
-                    height: 50,
-                    width: 200,
+                    height: 40,
+                    width: 150,
                     child: GestureDetector(
                       onTap: ()
                       {
@@ -108,7 +104,7 @@ class _SecondScreenState extends State<SecondScreen> {
                       },
                       child: Card(
                         elevation: 2,
-                        color: Colors.blue,
+                        color: Color.fromARGB(215, 114, 137, 218),
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Center(
