@@ -54,7 +54,7 @@ class _SecondScreenState extends State<SecondScreen> {
                             child: Center(
                               child: Text('14m ago',
                                 style: TextStyle(
-                                  fontSize: 14.0, color: Colors.white, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat',
+                                  fontSize: 10.0, color: Colors.white, fontWeight: FontWeight.w600, fontFamily: 'Monteserrat',
                                 ),),
                             ),
                           ),
